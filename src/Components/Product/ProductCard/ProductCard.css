@@ -1,0 +1,178 @@
+.cardHeader {
+  text-align: center;
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+}
+
+.cardMedia {
+  transition: 1s;
+}
+
+.cardMedia:hover {
+  transform: scale(1.03);
+}
+
+.cardHeader::before {
+  position: relative;
+  content: "€ ";
+  color: black;
+  right: -41%;
+  top: 12px;
+  font-size: 24px;
+}
+.cardHeader span:first-child {
+  color: #080b13;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.4;
+}
+
+.cardHeader span:last-child {
+  font-weight: 500;
+  font-size: 24px;
+  color: #080b13 !important;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.start-info-film {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  display: flex;
+}
+.start-way {
+  width: 85%;
+  height: 350px;
+  background-color: #f7ab07;
+  margin-left: 80px;
+}
+.start-way span {
+  display: flex;
+  font-size: 29px;
+  width: 50%;
+  margin-left: 6%;
+  margin-top: 5%;
+}
+/* .film-general {
+  display: flex;
+  margin-top: 3%;
+  width: 100%;
+  justify-content: center;
+} */
+.film-year {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 12.3%;
+  height: 150px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  text-align: center;
+  box-shadow: 0.5px 0.5px 5px 0px #591111;
+  position: relative;
+  left: 25px;
+}
+.film-year__photo {
+  color: rgb(233, 83, 13);
+
+  width: 80%;
+
+  background-repeat: no-repeat;
+}
+.film-year__photo__second {
+  background-image: url();
+  width: 200px;
+  height: 200px;
+}
+.film-name__money {
+  background-image: url();
+}
+.film-info {
+  height: 150px;
+  margin-top: 3%;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film-info-size {
+  width: 85%;
+}
+.film-way {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 10px;
+  box-shadow: 0.5px 0.5px 5px 0px #591111;
+  width: 65%;
+}
+.film-desk {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: start;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  line-height: 6em !important;
+  height: 4.2em !important;
+}
+.border__block-3__survey {
+  display: none;
+}
+
+.oblojka {
+  width: 300px;
+  height: 100%;
+}
+@media all and (max-width: 640px) {
+  .oblojka {
+    width: 150px;
+  }
+}
+@media all and (max-width: 840px) {
+  .oblojka {
+    width: 200px;
+  }
+  .start-way {
+    width: 85%;
+    height: 350px;
+    background-color: #f7ab07;
+    margin-left: 40px;
+  }
+}
+@media all and (max-width: 610px) {
+  .oblojka {
+    width: 130px;
+  }
+}
+@media all and (max-width: 550px) {
+  #photo2 {
+    display: none;
+  }
+  .oblojka {
+    width: 160px;
+  }
+}
+@media all and (max-width: 450px) {
+  #photo3 {
+    display: none;
+  }
+  .oblojka {
+    width: 230px;
+  }
+}
